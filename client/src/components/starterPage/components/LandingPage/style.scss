@@ -1,0 +1,37 @@
+.landing-page {
+	h1 {
+		font-size: 70px;
+		width: 800px;
+		animation: 0.6s ease-in-out textAanimation;
+	}
+
+	.button {
+		background-color: #1d1d1d;
+		border: 1px solid #1d1d1d;
+		color: white;
+		padding: 17px 50px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 14px;
+		border-radius: 4px;
+		transition: 0.3s;
+
+		&:hover {
+			background-color: transparent;
+			color: #1d1d1d;
+			cursor: pointer;
+		}
+	}
+}
+
+@keyframes textAanimation {
+	0% {
+		transform: translateY(40%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

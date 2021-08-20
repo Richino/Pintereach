@@ -1,0 +1,27 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"email-validator": "^2.0.4",
+		"express": "^4.17.1",
+		"express-validator": "^6.12.1",
+		"helmet": "^4.6.0",
+		"mongoose": "^5.13.7",
+		"nodemailer": "^6.6.3"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.12"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "nodemon index.js"
+	},
+	"author": "",
+	"license": "ISC"
+}
