@@ -42,15 +42,15 @@ router.post("/register", (req, res, next) => {
 				} else {
 					verification_code = Math.floor(1000 + Math.random() * 9000);
 					const send_email = nodemailer.createTransport({
-						service: "gmail",
+						service: "",
 						auth: {
-							user: "pintereach@gmail.com",
-							pass: "Pintereach1211",
+							user: "",
+							pass: "",
 						},
 					});
 
 					const mail = {
-						from: "pintereach@gmail.com",
+						from: "",
 						to: email,
 						subject: "Verification code",
 						text: `Your verifivation code is ${verification_code}.`,
